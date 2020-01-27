@@ -1,0 +1,11 @@
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: $second-primary;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    &-copyright{
+        color:white;
+    }
+}

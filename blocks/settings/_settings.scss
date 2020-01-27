@@ -1,0 +1,32 @@
+$first-primary:#FFC740;
+$second-primary:#9B51E0;
+@mixin btn($heiht,$width,$backColor,$color) {
+    width: $width;
+    height:$heiht;
+    background-color: $backColor;
+    color:$color;
+    border:none;
+    text-transform: uppercase;
+  }
+*{
+    color:black;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    width: 980px;
+    margin: auto;
+    
+}
+@media (max-width:980px){
+    .container{
+        width: 100%;
+    }
+}

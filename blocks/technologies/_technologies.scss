@@ -1,0 +1,26 @@
+.technologies{
+    margin: 2rem auto;
+    &List{
+        margin-top: 1rem;
+        justify-content: space-around;
+        display: flex;
+    }
+}
+@media (max-width:768px)and(min-width:480px){
+    .technologies{
+        margin: 2rem auto;
+        width: 80%;
+        &List{
+            flex-wrap: wrap;
+        }
+    }
+}
+@media (max-width:480px){
+    .technologies{
+        margin: 2rem auto;
+        width: 80%;
+        &List{
+            flex-wrap: wrap;
+        }
+    }
+}

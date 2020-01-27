@@ -1,0 +1,20 @@
+.blog{
+    width: 100%;
+    display: flex;
+    margin:1rem auto;
+    flex-direction: column;
+}
+.post{
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    &-img{
+        width: 70px;
+        height: 70px;
+    }
+    &-text{
+        width: 80%;
+        margin: auto;
+    }
+}

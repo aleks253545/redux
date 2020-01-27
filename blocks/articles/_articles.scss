@@ -1,0 +1,92 @@
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.article{
+    margin-top:2rem;
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    &Main{
+        margin-top: 1rem;
+        display: flex;
+        height: 100%;
+    }
+    &-ava{
+        padding: 1px;
+        border: 2px solid $first-primary;
+    }
+    &Content{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        &__text{
+            overflow: auto;
+            max-height: 120px;
+        }
+        &__more,&__tags{
+            margin-top:auto;
+            
+        }
+        &__more{
+            text-decoration: underline;
+        }
+    }
+    &-list{
+        &__item{
+            margin-top:5px;
+            display: flex;
+            align-items: center;
+            &__img{
+                height: 45px;
+                width: 70px;
+                margin-right:1rem;
+            }
+            &__content__title{
+                font-weight: normal;
+                text-transform: uppercase;
+            }
+        }
+        
+    }
+}
+.block-header{
+    display: flex;
+    &__text{
+        margin-left:2rem;
+        background-color: white;
+        text-transform: uppercase;
+    }
+    &-bgsecond{
+        background-color: $second-primary;
+    }
+    &-bgfirst{
+        background-color: $first-primary;
+    }
+}
+@media (max-width:980px){
+    .articleContent__text{
+        overflow: hidden;
+    }
+}
+@media (max-width:768px)and(min-width:480px){
+    .article{
+        margin-top: 2rem !important;
+        width:80%;
+        margin:auto;
+        &Content{
+            min-height:100px;
+        }
+    }
+}
+@media (max-width:480px){
+    .article{
+        margin-top: 2rem !important;
+        width:90%;
+        margin:auto;
+        &Content{
+            min-height:100px;
+        }
+    }
+}
